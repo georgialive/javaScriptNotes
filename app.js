@@ -151,11 +151,19 @@ console.log('The fahrenheit value is' + fahrenheit
 
 /* EQUALITIES
 
-"==" amd "==="
+"==", "===", "!=", "!=="
 
 - Single equals reassigns a value to a variable
 - Double equals checks the values
 - Triple equals checks the values and types
+
+!= - value no equal
+!== - not equal value and/or equal type
+
+> greater than
+< less than
+>= greater than or equal to
+<= less than or equal to
 
 */
 
@@ -256,3 +264,18 @@ else {
     x = (cash1 - price1) * (-1)
     console.log(`not enough money - you still owe ${x1 * (-1)} dollars`)
 }
+
+/* 
+
+LOGICAL OPERATORS:
+
+&& checks if the left and right side of the comparison are true
+
+EX: (--> means produces)
+- true && true --> true
+- true && false --> false
+- false && false --> false
+- false && false --> false
+
+*/
+
