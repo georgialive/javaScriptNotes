@@ -214,7 +214,7 @@ else {
     console.log('tell user to log into account')
 }
 
-// EX
+// EX 1:
 
 let cash = 40
 let price = 40
@@ -236,3 +236,23 @@ else {
 }
 
 
+// VIDEO EXAMPLE:
+
+let cash1 = 40
+let price1 = 40
+
+let x1 = cash - price
+
+if (cash1 > price1) {
+    console.log(`you paid extra-here's ${x1} dollars change`)
+}
+
+else if (cash1 === price1) {
+    console.log("you paid the exact ammount have a nice day")
+}
+
+else {
+
+    x = (cash1 - price1) * (-1)
+    console.log(`not enough money - you still owe ${x1 * (-1)} dollars`)
+}
