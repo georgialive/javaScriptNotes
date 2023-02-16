@@ -194,8 +194,11 @@ CONDITIONALS:
 
 */
 
-// NOTE: Just like Java, you can have an if statement and
-// no else statement, but you cannot only have an else statment without an if statement
+//  NOTE: Just like Java, you can have an if statement and
+//  no else statement, but you cannot only have an else statment without an if statement
+
+
+// EX:
 
 
 let subscribed = false
@@ -211,6 +214,25 @@ else {
     console.log('tell user to log into account')
 }
 
+// EX
 
+let cash = 40
+let price = 40
+
+let x = cash - price
+
+if (cash > price) {
+    console.log("you paid extra-here's" + x + "dollars change")
+}
+
+else if (cash === price) {
+    console.log("you paid the exact ammount have a nice day")
+}
+
+else {
+
+    x = (cash - price) * (-1)
+    console.log("not enough money - you still owe" + x + "dollars")
+}
 
 
