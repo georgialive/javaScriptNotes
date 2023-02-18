@@ -356,4 +356,48 @@ let hot = true
 hot ? console.log('weather is hot outside') : console.log('weather is cold')
 
 
+//EX:
+
+let subscribed1 = true
+let loggedIn1 = true
+
+let ifStatement = subscribed1 && loggedIn1 ? 'show the video' : 'hide the video'
+console.log(ifStatement);
+
+
+//Practice
+
+let money = 50
+let cost = 40
+let store = true
+
+let gotMoney = (money >= cost) && store ? "give receipt" : "don't give receipt"
+
+console.log(gotMoney);
+
+/* 
+LOOPS
+- Reoeat the same code over and over again.
+- Will keep looping until we give it a condition to stop.
+
+
+DRY: don't repeat yourself because you can use a loop.
+
+JavaScript has Three Types of Loops:
+- for loop
+- while loop
+- do while loop
+
+*/
+let count = 1;
+
+
+while (count <= 100) {
+
+    console.log(count)
+    count = count + 1
+
+}
+
+
 
