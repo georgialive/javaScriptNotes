@@ -311,3 +311,49 @@ Making it mean if the variable ! (is not equal to) true.
 
 */
 
+/*
+
+FALSY VALUES: a falsy value is considered as 'false' when 
+converted to a boolean.
+
+- undefined
+- null
+- NaN (not a number)
+- 0
+- ""
+- false
+
+TRUTHY VALUES: is considered as 'true' when converted to a 
+boolean.
+-10
+-3.14
+-"Frontend Simplified"
+-"false"
+-"0"
+-[]
+-{}
+
+*/
+
+// NOTE: to check if truthy or falsy, 
+// in the console write '!!' + 'your value' 
+// and it will tell you if it is true or false
+
+
+/* 
+
+TERNARY OPERATORS: a shortcut for an if else condition
+
+EX:
+"isObsese ? 'unhealthy' : 'healthy"
+
+"subscribed ? 'blockVideo' : 'showVideo'"
+
+*/
+
+let hot = true
+
+hot ? console.log('weather is hot outside') : console.log('weather is cold')
+
+
+
