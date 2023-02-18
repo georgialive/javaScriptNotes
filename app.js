@@ -191,15 +191,8 @@ let bool3 = '1' !== 1
 
 // checks if values & types are NOT equal, therefore returns false
 
-
-// TIME: 35:20-Conditionals
-
-/* 
-
-
+/*
 CONDITIONALS:
-
-
 */
 
 //  NOTE: Just like Java, you can have an if statement and
@@ -402,5 +395,28 @@ while (count <= 100) {
 for (let i = 1; i < 100; i++) {
 
     console.log(i);
+
+}
+
+
+// JavaScript Crash Course: Time: 1:05:29
+
+for (let i = 1; i < 20; i++) {
+
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log("Frontend Simplified");
+    }
+
+    else if (i % 3 === 0) {
+        console.log("Frontend");
+    }
+
+    else if (i % 5 === 0) {
+        console.log("Simplified");
+    }
+
+    else {
+        console.log(i);
+    }
 
 }
