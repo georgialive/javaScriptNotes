@@ -279,3 +279,35 @@ EX: (--> means produces)
 
 */
 
+let cash2 = 50
+let price2 = 40
+let isStoreOpen = true
+
+if (cash >= price && isStoreOpen === true){
+    console.log("Print the receipt.")
+}
+
+/* '||' checks if the left OR right 
+side of the comparison is true. 
+
+*/
+
+let cash3 = 50
+let price3 = 40
+let isStoreOpen1 = false
+
+if (cash >= price || !isStoreOpen){
+    console.log("Print the receipt.")
+}
+
+/* NOTE: Because 'isStoreOpen' variable is a boolean
+in and of its self, we do not need to put '=== true' because
+it is a boolean. 
+
+If we want it to do *something* when it is 'false' we simply
+can add a ! before the boolean variable.
+
+Making it mean if the variable ! (is not equal to) true.
+
+*/
+
