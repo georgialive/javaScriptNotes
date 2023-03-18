@@ -425,3 +425,82 @@ const string = "Frontend Simplified"
 for (let i = 0; i < string.length; i++) {
     console.log(string[i]);
 }
+
+/*
+
+
+FUNCTIONS
+- just a block of code designed to preform a particular task
+
+
+
+EX:
+
+ */
+
+// Funtction Definition: set the code that is repeated so you can just call it
+function welsomePersontoFES(name, firstName, lastName) {
+    console.log(`Welsome to FES, ${name}, ${firstName} ${lastName}`)
+}
+
+//Call a funtion
+welsomePersontoFES('Georgia', 'Georgia', 'Vrana');
+welsomePersontoFES('David', 'Brag', 'David');
+welsomePersontoFES('Zen');
+welsomePersontoFES('Mitri');
+
+
+//return statmenet
+
+function fn() {
+    return 5
+    console.log('my function')
+}
+
+console.log(fn());
+
+
+//add two numbers together?
+
+function sumOfTwoNumbers () {
+    return 5 + 10
+}
+
+console.log(sumOfTwoNumbers());
+
+//let's make it dynamic
+
+
+function sumOfTwoNumber (num1, num2) { // parameter when you are defining the funciton
+    return num1 + num2
+}
+
+console.log(sumOfTwoNumber(10, 10)) // argument when calling the function
+
+/* MAKE SURE THAT THE ORDER OF THE NUMBERS MATCHES THE ORDER OF THE PARAMETER'S NAMES
+
+NOTE: hover over the function name to find the order (sumOfTwoNumber) */
+
+
+/* Practice: Create a Function that Converts Celsius to Fahrenheit
+
+Celsuis to Fahrenheit Formula:
+
+    F = C x 1.8 + 32
+
+@example
+converCelsiusToFharenheit(0) -> 32
+converCelsiusToFharenheit(10) -> 50
+converCelsiusToFharenheit(30) -> 86
+
+*/
+
+function celsiusToFharenheit (cTemp) {
+
+    var fTemp = cTemp * 1.8 + 32
+
+    return fTemp;
+}
+
+console.log(celsiusToFharenheit(0));
+
