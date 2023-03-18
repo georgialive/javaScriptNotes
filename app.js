@@ -562,16 +562,45 @@ console.log(oldArr)
 /* Practice:
 
 Filter out all the 'FAIL' elements in an array
+
 @examples
  ['A+', 'A', 'FAIL'] => ['A+', 'A']
  ['FAIL', 'FAIL', 'B' ] => ['B']
-*
  ['FAIL'] => []
+
 */
 
 
 let grades = ['A+', 'A', 'FAIL']
 
-let goodGrades = grades.filter(element => element != 'FAIL')
+let goodGrades = grades.filter(element => element !== 'FAIL')
 
 console.log(goodGrades)
+
+
+/*
+Filter out all the 'FAIL' elements in an array
+with using the Array.filter method
+
+@examples
+ ['A+', 'A', 'FAIL'] => ['A+', 'A']
+ ['FAIL', 'FAIL', 'B' ] => ['B']
+ ['FAIL'] => []
+
+*/
+
+let grades1 = ['A+', 'A', 'FAIL']
+
+let goodGrade = []
+
+for (let i = 0; i < grades.length; ++i) {
+  if (grades[i] !== 'FAIL')
+  {
+    goodGrade.push(grades[i])
+  }
+  else {
+    console.log()
+  }
+}
+
+console.log(goodGrade)
