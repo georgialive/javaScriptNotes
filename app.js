@@ -604,3 +604,66 @@ for (let i = 0; i < grades.length; ++i) {
 }
 
 console.log(goodGrade)
+
+
+/* 
+
+ARRAY.MAP
+
+*/
+
+let arr1 = [1, 2, 9, 16]
+
+let newArray = arr.map((element) => {
+    console.log(element);
+    return undefined
+})
+
+console.log(newArray);
+
+//shortened version
+
+let arr10 = [1, 4, 9, 16]
+
+let newArray10 = arr.map(element => 'dog')
+
+console.log(newArray10)
+
+/*
+Practice Questions:
+
+Turn each element in an array of dollars into cents
+
+@examples
+[1, 5, 10, 3] => [100, 500, 1000, 300]
+[0, 10, 20] => [0, 1000, 2000]
+
+*/
+
+let dollars = [1, 5, 10, 3]
+
+let cents = dollars.map(element => (element * 100))
+
+console.log(cents)
+
+/*
+Practice Questions:
+
+Turn each element in an array of dollars into cents
+WITHOUT USING THE MAP METHOD
+
+@examples
+[1, 5, 10, 3] => [100, 500, 1000, 300]
+[0, 10, 20] => [0, 1000, 2000]
+
+*/
+
+let dollars1 = [1, 5, 10, 3]
+
+let cents1 = []
+
+for (let i = 0; i < grades.length + 1; ++i) {
+  cents1.push(dollars1[i] * 100)
+}
+
+console.log(cents1)
