@@ -496,11 +496,82 @@ converCelsiusToFharenheit(30) -> 86
 */
 
 function celsiusToFharenheit (cTemp) {
-
-    var fTemp = cTemp * 1.8 + 32
-
-    return fTemp;
+    return cTemp * 1.8 + 32
 }
 
 console.log(celsiusToFharenheit(0));
 
+
+/* SECOND WAY TO CALL A FUNCTION */
+
+//error function
+
+const convertCelsiusToFharenheit = (cTemp) => {
+    return cTemp * 1.8 + 32
+}
+
+console.log(convertCelsiusToFharenheit(0));
+
+
+/* 
+
+ARRAYS 
+- Data structure that can hold multiple data values in one variable
+
+
+*/
+
+
+let arr = [20, 30, 40, 50, 100] //you can put more than one data type in one array!
+
+
+//First element of an array
+console.log(arr[0])
+
+//Last element of an array
+console.log(arr[arr.length - 1])
+
+
+//Pushs the new element on to the end of the array
+
+arr.push(200)
+
+console.log(arr);
+
+//This is a call back function
+
+// 
+
+let newArr = arr.filter((element) => {
+    console.log(element)
+    if (element < 50) {
+        return true;
+    }
+})
+
+console.log(newArr)
+
+
+//How to do the above in 1 line
+
+let oldArr = arr.filter(element => element < 50)
+
+console.log(oldArr)
+
+
+/* Practice:
+
+Filter out all the 'FAIL' elements in an array
+@examples
+ ['A+', 'A', 'FAIL'] => ['A+', 'A']
+ ['FAIL', 'FAIL', 'B' ] => ['B']
+*
+ ['FAIL'] => []
+*/
+
+
+let grades = ['A+', 'A', 'FAIL']
+
+let goodGrades = grades.filter(element => element != 'FAIL')
+
+console.log(goodGrades)
