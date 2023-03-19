@@ -764,6 +764,8 @@ on your website
 
 */
 
+//CHANGE HTML
+
 //First way of accessing an element
 
 console.log(document.querySelector('#title')); //for ID's
@@ -776,4 +778,10 @@ console.log(document.getElementById('title'));
 
 console.log(document.querySelector('.title').innerHTML = "Frontend Simplifed")
 
+//CHANGE CSS
 
+document.querySelector(".title").style.fontSize = '16px'
+
+function toggleDarkMode() {
+    document.querySelector('body').classList.toggle("dark-theme")
+}
