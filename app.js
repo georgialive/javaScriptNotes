@@ -667,3 +667,97 @@ for (let i = 0; i < grades.length + 1; ++i) {
 }
 
 console.log(cents1)
+
+/*
+
+
+OBJECTS
+- Used to stre multiple properties in one variable
+(Completely different to arrays)
+
+*/
+
+let userFirstName = 'David'
+let userLastName = 'Bragg'
+let userDiscordID = 'Bragg#0001'
+let userSubscriptionStatus = 'VIP'
+
+//way to much work
+
+let user = [{
+    username: 'David',
+    email: 'david@frontendsimplified.com',
+    password: 'test123',
+    subscriptionStatus: 'VIP',
+    discordID: 'David Gradd#0001',
+    lessonsCompleted: [0, 1]
+}, {
+    username: 'Mitri',
+    email: 'mitri@frontendsimplified.com',
+    password: 'mitri123',
+    subscriptionStatus: 'VIP',
+    discordID: 'Mitri#0001',
+    lessonsCompleted: [0, 1, 2, 3]
+}]
+
+console.log(user[0].username[0]);
+
+console.log(user[0].subscriptionStatus);
+
+console.log(user[1].lessonsCompleted.map(elem => elem * 2));
+
+function login(email, password) {
+    for (let i = 0; i < user.length; i++) {
+        if (user[i].email === email) {
+            console.log(user[i]);
+            if (user[i].password === password) {
+                console.log('log the user in - the details are correct')
+            }
+            else {
+                console.log(`login failder - password incorrect`)
+            }
+            return
+        }
+    }
+    console.log('the email account does not exist')
+}
+
+login(`david@frontendsimplified.com`, `test123`)
+
+
+
+/*
+Create a register function that accepts:
+- username
+- email
+- password
+- subscriptionsStatus
+- discordID
+- lessonsCompleted
+
+Inside your register function:
+1. Create a user object
+2. Push this user object onto the 'users' array
+*/
+
+function register (user) {
+    users.push(user);
+}
+
+register(
+{   username: "zen", 
+    email: "zen@frontendsimplified.com", 
+    password: "zen123",
+    subscriptionsStatus: "VIP", 
+    discordID: "Zen#0001",
+    lessonsCompleye: [0, 1]}
+);
+
+/*
+
+
+DOM (Document Object Model)
+- Allows you to access and change the styling and content oof elements
+on your website
+
+*/
