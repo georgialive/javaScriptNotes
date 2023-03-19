@@ -740,17 +740,18 @@ Inside your register function:
 2. Push this user object onto the 'users' array
 */
 
-function register (user) {
-    users.push(user);
+function register (user1) {
+    user.push(user1);
 }
 
-register(
+register (
 {   username: "zen", 
     email: "zen@frontendsimplified.com", 
     password: "zen123",
     subscriptionsStatus: "VIP", 
     discordID: "Zen#0001",
-    lessonsCompleye: [0, 1]}
+    lessonsCompleye: [0, 1]
+}
 );
 
 /*
@@ -760,4 +761,19 @@ DOM (Document Object Model)
 - Allows you to access and change the styling and content oof elements
 on your website
 
+
 */
+
+//First way of accessing an element
+
+console.log(document.querySelector('#title')); //for ID's
+
+console.log(document.querySelector('.title')); //for classes
+
+//Second way of accessing an element (best practice if element has an ID)
+
+console.log(document.getElementById('title'));
+
+console.log(document.querySelector('.title').innerHTML = "Frontend Simplifed")
+
+
