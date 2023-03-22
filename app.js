@@ -540,7 +540,6 @@ console.log(arr);
 
 //This is a call back function
 
-// 
 
 let newArr = arr.filter((element) => {
     console.log(element)
